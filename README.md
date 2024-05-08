@@ -1,3 +1,1 @@
-# Demo
-
-Cloud Resume Challenge
+# Cloud Resume Challenge
