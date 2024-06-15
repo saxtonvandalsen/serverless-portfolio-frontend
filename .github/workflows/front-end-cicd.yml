@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: deploy-container
 
 on:
   push:
@@ -8,25 +8,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - run: npm install
+      - run: npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          node-version: 12
-      - name: Install dependencies
-        run: yarn install
-      - name: Build
-        run: yarn build
-      - name: Test
-        run: yarn test
-      - name: Push build to S3
-        uses: sai-sharan/aws-s3-sync-action@master
-        with:
-          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: 'us-east-1'
-          source: 'build'
-          destination_bucket: ${{ secrets.AWS_S3_BUCKET }}
-          delete: true
-          quiet: false
+          aws-access-key-id: ${{ secrets. AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets. AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-1
+
+      - name: Copy files to the s3 website content bucket
+        run:
+          aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET }}/container/latest
