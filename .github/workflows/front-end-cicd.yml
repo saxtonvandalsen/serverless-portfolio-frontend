@@ -9,8 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: jakejarvis/s3-sync-action@v0.5.1
+      - uses: actions/checkout@master
+      - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl private --follow-symlinks --delete
         env:
