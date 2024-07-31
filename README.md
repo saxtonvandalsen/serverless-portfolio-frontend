@@ -2,19 +2,21 @@
 
 ## Project Overview
 
-The Cloud Resume Challenge is a comprehensive project that integrates various technologies and practices to build and deploy a personal resume website. After completing my AWS Cloud Practioner certificate, I wanted to put my knowledge to the test and challenge myself with a project developed around AWS services. Here’s how the different components work together:
+The Cloud Resume Challenge is a comprehensive project that integrates various technologies and practices to build and deploy a personal resume website. After completing my AWS Cloud Practioner certificate, I wanted to put my knowledge to the test and challenge myself with a project developed around AWS services.
+
+## Architecture
 
 ## Tools, Technologies, and Learnings
 
 ### Frontend Development
-* **HTML, CSS, and JavaScript**: Designed and developed a responsive website.
+* **HTML, CSS, and JavaScript**: Integrated a Bootstrap HTML and CSS template, customizing it as need to incorporate Javascript funcitonality.
 * **JavaScript Visitor Counter**: Implemented a dynamic visitor counter to track website visits.
 
 ### Infrastructure
 * **AWS S3**: Hosted the static website content.
 * **AWS Lambda**: Managed serverless functions.
 * **AWS DynamoDB**: Stored visitor count data.
-* **AWS CloudFront & ACM**: Delivered content with low latency, HTTPS settings, and managed custom domain name.
+* **AWS CloudFront & ACM**: Delivered content with low latency, HTTPS settings, and management of custom domain name.
 
 ### DevOps Practices
 * **Infrastructure as Code (IaC)**: Used Terraform to automate the provisioning of AWS resources.
@@ -25,7 +27,7 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 * **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management, ensuring secure access control.
 * **Environment Variables and Secret Keys**: Secured sensitive information using environment variables to protect against unauthorized access.
 * **AWS CLI and SDKs**: Gained hands-on experience with AWS Command Line Interface for IAM role configuration and leveraged AWS SDKs for programmatic interactions with AWS services.
-* **Version Control**: Utilized Git and GitHub for version control, ensuring efficient collaboration and code management.
+* **Version Control**: Utilized Git and GitHub for version control, ensuring efficient code management.
 
 
 ### Visitor Counter API Integration
@@ -55,3 +57,6 @@ def lambda_handler(event, context):
     
     return views
 ```
+
+### Backend Repository
+* Established a dedicated [backend repository](https://github.com/saxtonvandalsen/backend-iac-cloudresume) to manage the backend configuration. This setup allows for automated updates to Terraform and AWS services upon pushing changes.
