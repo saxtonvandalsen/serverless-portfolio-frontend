@@ -13,26 +13,22 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 ### Infrastructure
 * **AWS S3**: Hosted the static website content.
 * **AWS Lambda**: Managed serverless functions.
-* **AWS API Gateway**: Served as the API endpoint for the Lambda functions.
 * **AWS DynamoDB**: Stored visitor count data.
-* **AWS CloudFront & ACM**: Delivered content with low latency and managed custom domain name.
+* **AWS CloudFront & ACM**: Delivered content with low latency, HTTPS settings, and managed custom domain name.
 
 ### DevOps Practices
 * **Infrastructure as Code (IaC)**: Used Terraform to automate the provisioning of AWS resources.
 * **Continuous Integration/Continuous Deployment (CI/CD)**: Set up GitHub Actions for automated deployment and testing.
 * **Monitoring and Logging**: Utilized CloudWatch for monitoring application performance and logging events.
 
-### Security
-* **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management.
-* **Environment Variables and Secret Keys**: Secured sensitive information using environment variables.
+### AWS CLI, SDK, and Security
+* **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management, ensuring secure access control.
+* **Environment Variables and Secret Keys**: Secured sensitive information using environment variables to protect against unauthorized access.
+* **AWS CLI and SDKs**: Gained hands-on experience with AWS Command Line Interface for IAM role configuration and leveraged AWS SDKs for programmatic interactions with AWS services.
+* **Version Control**: Utilized Git and GitHub for version control, ensuring efficient collaboration and code management.
 
 
-
-* Gained experience with AWS CLI and SDKs
-* Version control (Git and GitHub)
-
-
-### Backend / Visitor Counter API Integration
+### Visitor Counter API Integration
 * Implemented a dynamic visitor counter on my S3-hosted static website using AWS Lambda and DynamoDB.
 * Configured Lambda with the function URL setting to create a lightweight API, with the Lambda function acting as an intermediary between the website and DynamoDB.
 * Each page visit triggers the Lambda function via its HTTPS endpoint, which retrieves, increments, and updates the view count in DynamoDB, ensuring a scalable and real-time visitor tracking system.
