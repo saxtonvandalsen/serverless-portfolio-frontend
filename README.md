@@ -55,6 +55,3 @@ def lambda_handler(event, context):
     
     return views
 ```
-
-### Backend Repository and CI/CD
-* Established a dedicated [backend repository](https://github.com/saxtonvandalsen/backend-iac-cloudresume) to manage the backend configuration. This setup allows for automated updates to Terraform and AWS services upon pushing changes.
