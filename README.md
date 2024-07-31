@@ -22,10 +22,10 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 * **Monitoring and Logging**: Utilized CloudWatch for monitoring application performance and logging events.
 
 ### AWS CLI, SDK, and Security
-* **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management.
-* **Environment Variables and Secret Keys**: Secured sensitive information using environment variables.
-* Gained experience with AWS CLI and SDKs
-* Version control (Git and GitHub)
+* **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management, ensuring secure access control.
+* **Environment Variables and Secret Keys**: Secured sensitive information using environment variables to protect against unauthorized access.
+* **AWS CLI and SDKs**: Gained hands-on experience with AWS Command Line Interface for IAM role configuration and leveraged AWS SDKs for programmatic interactions with AWS services.
+* **Version Control**: Utilized Git and GitHub for version control, ensuring efficient collaboration and code management.
 
 
 ### Visitor Counter API Integration
