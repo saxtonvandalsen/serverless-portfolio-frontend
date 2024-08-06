@@ -16,9 +16,9 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 
 ### Infrastructure
 * **AWS S3**: Hosted the static website content.
-* **AWS Lambda**: Managed serverless functions.
+* **AWS Lambda**: Managed serverless function URL.
 * **AWS DynamoDB**: Stored visitor count data.
-* **AWS CloudFront & ACM**: Delivered content with low latency, HTTPS settings, and management of custom domain name.
+* **AWS CloudFront & ACM**: Delivered content with low latency, maintained HTTPS settings, and the management of my custom domain name.
 
 ### DevOps Practices
 * **Infrastructure as Code (IaC)**: Used Terraform to automate the provisioning of AWS resources.
