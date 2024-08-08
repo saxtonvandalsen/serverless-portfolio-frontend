@@ -37,7 +37,7 @@ const counter = document.querySelector(".counter-number");
 
 // Async function, which allows it to use the 'await' keyword to handle asynchronous operations
 async function updateCounter() {
-    // Send an HTTP request to AWS Lambda endpointto retrieve current view count
+    // Send an HTTP request to my AWS Lambda endpoint to retrieve current view count
     let response = await fetch("https://7v2otwhdr6zr45udwxpb3rmogy0ghnpw.lambda-url.us-west-1.on.aws/");
     // Await response from the server to send back the data, then converts it from JSON to JavaScript object
     let data = await response.json();
@@ -45,8 +45,5 @@ async function updateCounter() {
     // to a string that includes the view count
     counter.innerHTML = ` Views: ${data}`;
 }
-
-// HTML Element: <div class="counter-number">...</div>
-// Inner HTML: The ... part, which is the content inside the <div> tags.
 
 updateCounter();
