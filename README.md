@@ -12,18 +12,17 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 
 ### Frontend Development
 * **HTML, CSS, and JavaScript**: Integrated a Bootstrap HTML and CSS template, customizing it as need to incorporate Javascript funcitonality.
-* **JavaScript Visitor Counter**: Implemented a dynamic visitor counter to track website visits.
+* **JavaScript (API-Driven Counter)**: Fetches the visitor count from my DynamoDB table via my Lambda function. The count is displayed through my html file, making it dynamic and up-to-date with every page load.
 
 ### Infrastructure
 * **AWS S3**: Hosted the static website content.
-* **AWS Lambda**: Managed serverless function URL.
-* **AWS DynamoDB**: Stored visitor count data.
+* **AWS Lambda**: Management of my serverless function URL.
+* **AWS DynamoDB**: Stores my webpages visitor count data.
 * **AWS CloudFront & ACM**: Delivered content with low latency, maintained HTTPS settings, and the management of my custom domain name.
 
 ### DevOps Practices
-* **Infrastructure as Code (IaC)**: Used Terraform to automate the provisioning of AWS resources.
+* **Infrastructure as Code (IaC)**: Used Terraform to automate the provisioning of my AWS resources.
 * **Continuous Integration/Continuous Deployment (CI/CD)**: Set up GitHub Actions for automated deployment and testing.
-* **Monitoring and Logging**: Utilized CloudWatch for monitoring application performance and logging events.
 
 ### AWS CLI, SDK, and Security
 * **IAM Roles and Policies**: Implemented best practices for AWS Identity and Access Management, ensuring secure access control.
@@ -33,10 +32,11 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 
 
 ### Visitor Counter API Integration
-* Implemented a dynamic visitor counter on my S3-hosted static website using AWS Lambda and DynamoDB.
+* Implemented a dynamic visitor counter on my S3-hosted static website using AWS Lambda, DynamoDB, Python, and Javascript.
 * Configured Lambda with the function URL setting to create a lightweight API, with the Lambda function acting as an intermediary between the website and DynamoDB.
 * Each page visit triggers the Lambda function via its HTTPS endpoint, which retrieves, increments, and updates the view count in DynamoDB, ensuring a scalable and real-time visitor tracking system.
-  - Snippet of the Python code below:
+* Javascript then fetches the visitor count and displays it on my website.
+  - Snippet of the Python code in my Lambda function below:
 
 ```python
 import json
