@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Cloud Resume Challenge is a comprehensive project that integrates various technologies and practices to build and deploy a personal resume website. After completing my AWS Cloud Practioner certificate, I wanted to put my knowledge to the test and challenge myself with a project developed around AWS services.
+The Cloud Resume Challenge is a comprehensive project that integrates various technologies and practices to build and deploy a personal resume website. After completing my AWS Cloud Practioner (CLF-C02) certificate, I wanted to put my knowledge to the test and challenge myself with a project developed around AWS cloud services.
 
 ## Architecture
 
