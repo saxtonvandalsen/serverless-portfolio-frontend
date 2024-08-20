@@ -35,8 +35,8 @@ The Cloud Resume Challenge is a comprehensive project that integrates various te
 * Implemented a dynamic visitor counter on my S3-hosted static website using AWS Lambda, DynamoDB, Python, and Javascript.
 * Configured Lambda with the function URL setting to create a lightweight API, with the Lambda function acting as an intermediary between the website and DynamoDB.
 * Each page visit triggers the Lambda function via its HTTPS endpoint, which retrieves, increments, and updates the view count in DynamoDB, ensuring a scalable and real-time visitor tracking system.
-* Javascript then fetches the visitor count and displays it on my website.
-  - Snippet of the Python code in my Lambda function below:
+* Javascript then fetches the visitor count and displays it on the webpage.
+  - Snippet of the Python code in my Lambda function utilizing boto3 library:
 
 ```python
 import json
