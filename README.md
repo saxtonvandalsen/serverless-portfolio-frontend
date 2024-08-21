@@ -1,8 +1,8 @@
-# Cloud Resume Challenge - AWS
+# AWS Serverless CI/CD Portfolio Website (Frontend)
 
 ## Project Overview
 
-The Cloud Resume Challenge is a comprehensive project that integrates various technologies and practices to build and deploy a personal resume website. After completing my AWS Cloud Practioner (CLF-C02) certificate, I wanted to put my knowledge to the test and challenge myself with a project developed around AWS cloud services.
+This project showcases a fully serverless portfolio website, leveraging modern cloud infrastructure to enable seamless CI/CD workflows for both frontend and backend components. I hosted a static website on AWS S3 with a global distribution thorugh CloudFront, ensuring high availability and performance. The backend architecture, maintained in a seperate repository listed below, is managed using Infrastructure as Code (IaC) principles with Terraform, automating resource provisioning and configuration.
 
 ## Architecture
 
