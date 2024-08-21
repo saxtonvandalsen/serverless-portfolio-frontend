@@ -4,6 +4,8 @@
 
 This project showcases a fully serverless portfolio website, leveraging modern cloud infrastructure to enable seamless CI/CD workflows for both frontend and backend components. I hosted a static website on AWS S3 with a global distribution through CloudFront, ensuring high availability and performance. The backend architecture, maintained in a seperate repository listed below, is managed using Infrastructure as Code (IaC) principles with Terraform, automating resource provisioning and configuration.
 
+Link to my website: [saxtonvandalsen-resume](https://saxtonvandalsen-resume.com/)
+
 ## Architecture
 
 ![Architecture Diagram](src/assets/AWScloudresume.png)
